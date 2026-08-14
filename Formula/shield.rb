@@ -1,28 +1,28 @@
 class Shield < Formula
   desc "Code security scanner: SAST, secrets, dependencies, containers and IaC"
   homepage "https://zennoxa.com"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/Zennoxa/shield/releases/download/v0.3.0/shield-darwin-amd64"
-      sha256 "f3e6ca6ac5955eafb4b2be7d0b25b96e6429f0b912408926142665a1353dc68c"
+      url "https://github.com/Zennoxa/shield/releases/download/v0.4.0/shield-darwin-amd64"
+      sha256 "a5cfb2de7c26415dddbf0a500a41aeee3d2feecfdf488e4eb57d0b92b7497e7b"
     end
     on_arm do
-      url "https://github.com/Zennoxa/shield/releases/download/v0.3.0/shield-darwin-arm64"
-      sha256 "6e81afd9f1ed4f89ed29c13050abebc4e738a9c9d759944537f4d81601d3df6d"
+      url "https://github.com/Zennoxa/shield/releases/download/v0.4.0/shield-darwin-arm64"
+      sha256 "ed733db777ec18fbedc69e543dd89bdea094e51bd0ab20d518fc8e7ab68296b6"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/Zennoxa/shield/releases/download/v0.3.0/shield-linux-amd64"
-      sha256 "8c6a7e128a16e1b3f26ebf4ea88d54adff7bf41b2447fe784685d2f1fce79554"
+      url "https://github.com/Zennoxa/shield/releases/download/v0.4.0/shield-linux-amd64"
+      sha256 "3b022c26e2f42aa8590950a1fe1facfd04f84ec7f5b91cee787995a538de840e"
     end
     on_arm do
-      url "https://github.com/Zennoxa/shield/releases/download/v0.3.0/shield-linux-arm64"
-      sha256 "8d5b5c95a006a25dd400c671267b562037b3e28b33652b19e6ae1bae7c6beba9"
+      url "https://github.com/Zennoxa/shield/releases/download/v0.4.0/shield-linux-arm64"
+      sha256 "f3cbd6570573c8adcd0edf80de1f51d3deaf2101855e531acdafe5aee813a6fe"
     end
   end
 
@@ -31,6 +31,6 @@ class Shield < Formula
   end
 
   test do
-    assert_match "0.3.0", shell_output("#{bin}/shield version")
+    assert_match "0.4.0", shell_output("#{bin}/shield version")
   end
 end
